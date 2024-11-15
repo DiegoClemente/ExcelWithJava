@@ -23,14 +23,18 @@ The application will start at: `http://localhost:8080`
 
 You can import the data from the Excel file using **Insomnia**.
 
+To make it even easier, the Insomnia request configuration file (Insomnia_2024-11-15.json) has been included. 
+You only need to import this file into Insomnia, and it will automatically set up the necessary request.
+
 The Excel file should have the following structure:
 
 | Nome           | Idade | Data Nascimento | Saldo   |
 |-------------|-------|-----------------|---------|
-| João Silva  | 30    | 1994-02-01      | 1000.50 |
-| Maria Souza | 25    | 1999-06-15      | 1500.75 |
+| João Silva  | 30    | 01/01/1996      | 1000.50 |
+| Maria Souza | 25    | 03/03/2000      | 1500.75 |
 
-Create a POST request in Insomnia to upload the Excel file. The request should be configured as follows:
+
+After importing the Insomnia_2024-11-15.json file, create a POST request in Insomnia to upload the Excel file:
 
 - **Method**: POST
 - **URL**: `http://localhost:8080/api/users/`
